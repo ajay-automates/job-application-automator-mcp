@@ -1,0 +1,28 @@
+Dear Google Hiring Team,
+
+I am writing to express my strong interest in the Software Engineer position for Google Ads Auction Mechanisms. With 4 years of hands-on full-stack development experience and a Master's degree in Software Engineering from Northeastern University, I am excited about the opportunity to contribute to Google's advertising platform that powers the open internet.
+
+In my recent role at FolderWave, I enhanced system efficiency by 30% through designing and maintaining backend components of an e-commerce platform using Java, Spring Boot, and Hibernate. I optimized backend/frontend communication, improving response times by 50% through RESTful API implementation. This experience directly translates to the auction mechanism optimization work at Google.
+
+My technical expertise includes:
+• Backend Development: Java, Spring Boot, Hibernate, Node.js
+• Frontend Development: React.js, Angular, JavaScript, HTML/CSS
+• Cloud Technologies: AWS, Azure, Google Cloud Platform
+• Data Management: MySQL, MongoDB, PostgreSQL, Redis
+• DevOps: Docker, Kubernetes, Jenkins, CI/CD pipelines
+
+What particularly excites me about this role is the hybrid nature combining research, data science, and software engineering. My experience with experiment design, performance optimization, and data analysis through projects like the Continuous Monitoring Dashboard aligns perfectly with testing hypotheses about auction mechanisms and implementing improvements.
+
+I am passionate about building scalable systems that impact billions of users and would love to contribute to the innovative work being done by the Google Ads team. My background in both theoretical computer science and practical software development makes me well-suited for this challenging and impactful role.
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my skills and enthusiasm can contribute to Google's continued success.
+
+Sincerely,
+Ajay Kumar Reddy Nelavetla
+
+---
+Position: Software Engineer, Google Ads Auction Mechanisms
+Company: Google
+Location: Mountain View, CA, USA
+Date: September 21, 2025
+

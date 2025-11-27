@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "env": {
+    "BACKEND_API_URL": "@backend_api_url",
+    "BACKEND_API_TOKEN": "@backend_api_token"
+  }
+}

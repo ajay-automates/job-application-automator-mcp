@@ -1,1 +1,1 @@
-web: cd job_board_aggregator-main/job_board_aggregator-main && python run_server.py
+web: python run_server.py

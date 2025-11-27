@@ -1,9 +1,9 @@
 [build]
 builder = "nixpacks"
-buildCommand = "cd job_board_aggregator-main/job_board_aggregator-main && pip install -r requirements.txt"
+buildCommand = "pip install -r requirements.txt"
 
 [deploy]
-startCommand = "cd job_board_aggregator-main/job_board_aggregator-main && python run_server.py"
+startCommand = "python run_server.py"
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
 

@@ -32,20 +32,23 @@ except ImportError:
     print("⚠️  python-dotenv not installed, skipping .env file reload")
 
 if __name__ == "__main__":
+    # Get port from environment (Railway sets PORT env var)
+    port = int(os.getenv('PORT', 8080))
+
     # Check for minimal logging mode
     minimal_logging = os.getenv('MINIMAL_LOGGING', 'false').lower() == 'true'
-    
+
     if minimal_logging:
-        print("🔇 Minimal logging mode enabled - Starting server...")
+        print(f"Minimal logging mode enabled - Starting server on port {port}...")
         # Configure uvicorn for minimal output
         uvicorn.run(
-            "job_board_aggregator.server.app:app", 
-            host="0.0.0.0", 
-            port=8080, 
-            reload=True,
+            "job_board_aggregator.server.app:app",
+            host="0.0.0.0",
+            port=port,
+            reload=False,  # Disable reload in production
             log_level="warning",  # Only warnings and errors
             access_log=False      # Disable access logs
         )
     else:
-        print("🚀 Starting Job Board Aggregator Server...")
-        uvicorn.run("job_board_aggregator.server.app:app", host="0.0.0.0", port=8080, reload=True)
+        print(f"Starting Job Board Aggregator Server on port {port}...")
+        uvicorn.run("job_board_aggregator.server.app:app", host="0.0.0.0", port=port, reload=False)

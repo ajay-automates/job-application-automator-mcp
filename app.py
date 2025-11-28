@@ -1,23 +1,10 @@
 """
 FastAPI Application Entry Point for Railway
-This file is detected by Railpack and starts the FastAPI server automatically.
+This file exposes the FastAPI app for Railpack auto-detection.
+Railway will run: uvicorn app:app
 """
-import os
-import uvicorn
-
-# Import the FastAPI app from our package
+# Import the FastAPI app instance from our package
+# This makes it available as: app:app for uvicorn
 from job_board_aggregator.server.app import app
 
-if __name__ == "__main__":
-    # Railway sets the PORT environment variable
-    port = int(os.getenv('PORT', 8080))
-
-    print(f"Starting FastAPI server on port {port}...")
-
-    # Start uvicorn server
-    uvicorn.run(
-        app,
-        host="0.0.0.0",
-        port=port,
-        log_level="info"
-    )
+# Railpack will automatically run: uvicorn app:app --host 0.0.0.0 --port $PORT
